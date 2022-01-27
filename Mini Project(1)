@@ -1,0 +1,189 @@
+
+#include <stdio.h>
+int main()
+{
+int no_of_rooms, no_of_people, Age, i, no_of_nights;
+int amount_of_snacks, amount_of_gym, amount_of_swimming_pool,amount_of_salon,amount_of_massage, amount_of_cts;
+float taxes,total;
+char full_name[100], email[100], contact[100],ans_1, gender, snacks,cts, swimming_pool, gym, salon, massage, change;
+Refill: 
+printf("|                                                                         |\n");
+printf("|                                                                         |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| \"WELCOME TO GRAND HILBERT HOTEL\"                                        |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| Welcome, Dear Sir/Ma'am/Other                                           |\n");
+Room: printf("|                                                                         |\n");
+printf("| Would you wish to book a room today[Y/N]: ");
+scanf(" %c",&ans_1); 
+if(ans_1=='Y') 
+{
+printf("|                                                                         |\n");
+printf("| Oh Wonderful!!!                                                         |\n");
+printf("| Next you will be directed to the Personal Information Section.          |\n");
+for(i=0;i<10000000*(2.5);i++)
+{printf("");}
+printf("|                                                                         |\n");
+printf("|                                                                         |\n");
+printf("|-------------------------------------------------------------------------|\n");
+Personal: printf("| PERSONAL INFORMATION                                                    |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| In the following form, Please enter your personal information.          |\n");
+printf("| Name: ");
+scanf(" %[^\n]s",full_name);
+printf("| Gender[M/F/O]: ");
+scanf(" %c",&gender);
+printf("| Age: ");
+scanf(" %d",&Age);
+printf("| Contact Number: ");
+scanf(" %s",contact);
+printf("| Email-id: ");
+scanf(" %s",email);
+printf("|                                                                         |\n");
+printf("| Thank you for filling your personal information.                        |\n");                              
+printf("| Next you will be directed to your room booking and selection section.   |\n");
+for(i=0;i<10000000*(2.5);i++)
+{printf("");}
+printf("|                                                                         |\n");
+printf("|                                                                         |\n");
+printf("|-------------------------------------------------------------------------|\n");
+Rooms: printf("| ROOM BOOKING                                                            |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| In the following form, fill your details regarding your rooms & stay    |\n");
+printf("| How many nights do you wish to stay: ");
+scanf(" %d",&no_of_nights);
+printf("|                                                                         |\n");
+printf("| How many rooms do you wish to book: ");
+scanf("%d",&no_of_rooms);
+printf("|                                                                         |\n");
+printf("| And how many people would wish to join you: ");
+scanf("%d",&no_of_people); 
+printf("|                                                                         |\n");
+printf("| Thank you!! Your rooms have been selected.                              |\n");                              
+printf("| Next you will be directed to the Meal Booking and Lounge Bar options.   |\n");
+for(i=0;i<10000000*(2.5);i++)
+{printf("");}
+printf("|                                                                         |\n");
+printf("|                                                                         |\n");
+printf("|-------------------------------------------------------------------------|\n");
+Meal: printf("| MEAL AND SNACKS BOOKING AND LOUNGE BAR                                  |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| In the following section, please fill your Meal and snacks selction.    |\n");
+printf("|                                                                         |\n");
+printf("| At the GRANT HILBERT HOTEL,                                             |\n");
+printf("| Payment for 3 meals/day for all the days are added in the final bill.   |\n");
+printf("|                                                                         |\n");
+if(Age>=18) {printf("| And The Lilac Bar, On the 8th floor is complementary.                   |\n");
+printf("|                                                                         |\n");}
+printf("| So, Excluding that do you wish to order late evening snacks(Y/N): ");
+scanf(" %c",&snacks);
+if(snacks=='Y') amount_of_snacks=5;
+else if (snacks=='N')amount_of_snacks=0;
+printf("|                                                                         |\n");
+printf("| Would you like a refill of coffee/tea sachets, 8AM everyday(Y/N): ");
+scanf(" %c",&cts);
+if(cts=='Y') amount_of_cts=1;
+else if (cts=='N')amount_of_cts=0;
+printf("|                                                                         |\n");
+printf("| Thank you!! Your Meal and Bar selections have been finalized.           |\n");                              
+printf("| Next you will be directed to the Extra Services and Treatment section.  |\n");
+for(i=0;i<10000000*(2.5);i++)
+{printf("");}
+printf("|                                                                         |\n");
+printf("|                                                                         |\n");
+printf("|-------------------------------------------------------------------------|\n");
+Extra: printf("| EXTRA SERVICES AND TREATMENT                                            |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| In the following section, accordingly add your optional services.       |\n");
+printf("|                                                                         |\n");
+printf("| Would you like to have additional access to Swimming Pool(Y/N): ");
+scanf(" %c",&swimming_pool);
+if(swimming_pool=='Y') amount_of_swimming_pool=10;
+else if (swimming_pool=='N')amount_of_swimming_pool=0;
+printf("|                                                                         |\n");
+printf("| Would you like to have additional access to Gym(Y/N): ");
+scanf(" %c",&gym);
+if(gym=='Y') amount_of_gym=10;
+else if (gym=='N')amount_of_gym=0;
+printf("|                                                                         |\n");
+printf("| Would you like to have an appointment at the Salon(Y/N): ");
+scanf(" %c",&salon);
+if(salon=='Y') amount_of_salon=10;
+else if (salon=='N')amount_of_salon=0;
+printf("|                                                                         |\n");
+printf("| Would you like to have an appointment at the massage center(Y/N): ");
+scanf(" %c",&massage);
+if(massage=='Y') amount_of_massage=10;
+else if (massage=='N') amount_of_massage=0;
+printf("|                                                                         |\n");
+printf("| Thank you!! Your Additional Services and Treatment have been added.     |\n");                              
+printf("| Next you will be directed to Final Billing Screen.                      |\n");
+for(i=0;i<10000000*(2.5);i++)
+{printf("");}
+printf("|                                                                         |\n");
+printf("|                                                                         |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| BILLING AND PAYMENT                                                     |\n");
+printf("|-------------------------------------------------------------------------|\n");
+printf("| ROOM AND STAY($100/night)                                               |\n");
+printf("|(1)Cost for %d rooms for %d nights=$%d.                                  \n",no_of_rooms, no_of_nights, 100*no_of_rooms*no_of_nights);
+printf("|                                                                         |\n");
+printf("| MEAL AND SNACKS($40 for 3 meals/night)                                  |\n");
+printf("|(1)Cost for meals for %d nights=$%d.                                     \n",no_of_nights,40*no_of_nights);
+printf("|(2)Cost for snacks for %d nights=$%d.                                    \n",no_of_nights,amount_of_snacks*no_of_nights);
+printf("|(3)Cost for Tea, Coffee, Sugar Sachets for %d nights=$%d.              \n",no_of_nights,amount_of_cts*no_of_nights);
+printf("|                                                                         |\n");
+printf("| EXTRA SERVICES AND TREATMENT($10 Each/Day)                              |\n");
+printf("|(1)Cost for access to swimming pool for %d nights=$%d.                                     \n",no_of_nights,amount_of_swimming_pool*no_of_nights);
+printf("|(2)Cost for access to gym for %d nights=$%d.                                    \n",no_of_nights,amount_of_gym*no_of_nights);
+printf("|(3)Cost for appointment at the salon for %d nights=$%d.                                    \n",no_of_nights,amount_of_salon*no_of_nights);
+printf("|(4)Cost for appointment at the massage center for %d nights=$%d.                                    \n",no_of_nights,amount_of_massage*no_of_nights);
+total=100*no_of_rooms*no_of_nights+40*no_of_nights+amount_of_snacks*no_of_nights+
+amount_of_swimming_pool*no_of_nights+amount_of_gym*no_of_nights+amount_of_salon*no_of_nights+amount_of_massage*no_of_nights;
+printf("|                                                                         |\n");
+printf("| TAXES                                                                   |\n");
+taxes=5*total/100;
+printf("| Taxes(Including 2.5%% CGST and 2.5%% SGST each)=$%0.2f  \n",taxes);
+printf("|-------------------------------------------------------------------------|\n");
+printf("| TOTAL BILL: $%0.2f+$%0.2f=$%0.2f                                                          \n",total,taxes,total+taxes);
+printf("|-------------------------------------------------------------------------|\n");
+printf("| Thank you ");        
+if(gender =='M') printf("Mr. ");
+else if (gender=='F') printf("Mrs. ");
+printf("%s\n",full_name);
+printf("| For your booking for %d nights stay at the GRAND HILBERT HOTEL.                     \n",no_of_nights);
+printf("| We hope you'll have a pleasant stay with us.                            |\n");
+printf("| We are always here for you. Thank You ");
+if(gender =='M') printf("Sir.");
+else if (gender=='F') printf("Ma'am.");
+printf("\n|-------------------------------------------------------------------------|\n");
+printf("| If you wish to change anything throughout the form                      |\n");
+printf("| Here are the options:                                                   |\n");
+printf("| (1)Press 1 to go to Personal Info.                                      |\n");
+printf("| (2)Press 2 to go to Room Booking Process.                               |\n");
+printf("| (3)Press 3 to go to Meal Booking section.                               |\n");
+printf("| (4)Press 4 to go to Extra Services and Treatment Section.               |\n");
+printf("| (5)Press 5 to Refill the form.                                          |\n");
+printf("| (6)Press any other Key to finish Booking.                               |\n");
+printf("| Input: ");
+scanf(" %c",&change);
+//printf("|-------------------------------------------------------------------------|\n");
+
+printf("|-------------------------------------------------------------------------|\n");}
+
+else if (ans_1=='N') 
+{
+printf("|                                                                         |\n");
+printf("| No Worries, Thank you for visiting \"The Grand Hilbert Hotel\"\n");
+printf("|-------------------------------------------------------------------------|\n");}
+
+else {printf("| Invalid Input, please enter a valid input                               |\n"); goto Room;}
+
+if (change=='1') goto Personal;
+if (change=='2') goto Rooms;
+if (change=='3') goto Meal;
+if (change=='4') goto Extra;
+if (change=='5') goto Refill;
+
+
+return 0;}
