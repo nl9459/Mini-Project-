@@ -16,7 +16,7 @@ printf("| Welcome, Dear Sir/Ma'am/Other                                         
 Room: printf("|                                                                         |\n");
 printf("| Would you wish to book a room today[Y/N]: ");
 scanf(" %c",&ans_1); 
-if(ans_1=='Y') 
+if(ans_1=='Y'||ans_1=='y') 
 {
 printf("|                                                                         |\n");
 printf("| Oh Wonderful!!!                                                         |\n");
@@ -77,13 +77,13 @@ if(Age>=18) {printf("| And The Lilac Bar, On the 8th floor is complementary.    
 printf("|                                                                         |\n");}
 printf("| So, Excluding that do you wish to order late evening snacks(Y/N): ");
 scanf(" %c",&snacks);
-if(snacks=='Y') amount_of_snacks=5;
-else if (snacks=='N')amount_of_snacks=0;
+if(snacks=='Y'||snacks=='y') amount_of_snacks=5;
+else amount_of_snacks=0;
 printf("|                                                                         |\n");
 printf("| Would you like a refill of coffee/tea sachets, 8AM everyday(Y/N): ");
 scanf(" %c",&cts);
-if(cts=='Y') amount_of_cts=1;
-else if (cts=='N')amount_of_cts=0;
+if(cts=='Y'||cts=='y') amount_of_cts=1;
+else amount_of_cts=0;
 printf("|                                                                         |\n");
 printf("| Thank you!! Your Meal and Bar selections have been finalized.           |\n");                              
 printf("| Next you will be directed to the Extra Services and Treatment section.  |\n");
@@ -98,23 +98,23 @@ printf("| In the following section, accordingly add your optional services.     
 printf("|                                                                         |\n");
 printf("| Would you like to have additional access to Swimming Pool(Y/N): ");
 scanf(" %c",&swimming_pool);
-if(swimming_pool=='Y') amount_of_swimming_pool=10;
-else if (swimming_pool=='N')amount_of_swimming_pool=0;
+if(swimming_pool=='Y'||swimming_pool=='y') amount_of_swimming_pool=10;
+else amount_of_swimming_pool=0;
 printf("|                                                                         |\n");
 printf("| Would you like to have additional access to Gym(Y/N): ");
 scanf(" %c",&gym);
-if(gym=='Y') amount_of_gym=10;
-else if (gym=='N')amount_of_gym=0;
+if(gym=='Y'||gym=='y') amount_of_gym=10;
+else amount_of_gym=0;
 printf("|                                                                         |\n");
 printf("| Would you like to have an appointment at the Salon(Y/N): ");
 scanf(" %c",&salon);
-if(salon=='Y') amount_of_salon=10;
-else if (salon=='N')amount_of_salon=0;
+if(salon=='Y'||salon=='y') amount_of_salon=10;
+else amount_of_salon=0;
 printf("|                                                                         |\n");
 printf("| Would you like to have an appointment at the massage center(Y/N): ");
 scanf(" %c",&massage);
-if(massage=='Y') amount_of_massage=10;
-else if (massage=='N') amount_of_massage=0;
+if(massage=='Y'||massage=='y') amount_of_massage=10;
+else amount_of_massage=0;
 printf("|                                                                         |\n");
 printf("| Thank you!! Your Additional Services and Treatment have been added.     |\n");                              
 printf("| Next you will be directed to Final Billing Screen.                      |\n");
@@ -171,7 +171,7 @@ scanf(" %c",&change);
 
 printf("|-------------------------------------------------------------------------|\n");}
 
-else if (ans_1=='N') 
+else if (ans_1=='N'||ans_1=='n') 
 {
 printf("|                                                                         |\n");
 printf("| No Worries, Thank you for visiting \"The Grand Hilbert Hotel\"\n");
@@ -184,6 +184,5 @@ if (change=='2') goto Rooms;
 if (change=='3') goto Meal;
 if (change=='4') goto Extra;
 if (change=='5') goto Refill;
-
 
 return 0;}
